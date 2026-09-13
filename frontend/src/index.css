@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-darkBg text-white font-sans antialiased min-h-screen;
+    background-image: radial-gradient(circle at 15% 50%, rgba(229, 9, 20, 0.08), transparent 25%),
+                      radial-gradient(circle at 85% 30%, rgba(56, 189, 248, 0.05), transparent 25%);
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-2xl border border-white/20 shadow-2xl;
+  }
+  
+  .glass-panel {
+    @apply bg-cardBg backdrop-blur-xl border border-white/10 shadow-xl;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
