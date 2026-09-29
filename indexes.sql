@@ -14,3 +14,4 @@ CREATE INDEX idx_media_actors_actor ON media_actors USING btree (actor_id);
 
 -- 5. Index on ratings media_id for optimizing average rating queries and aggregation
 CREATE INDEX idx_ratings_media ON ratings USING btree (media_id);
+ 

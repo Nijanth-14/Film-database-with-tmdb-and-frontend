@@ -1,7 +1,9 @@
-fastapi
-uvicorn
-asyncpg
-pydantic
-httpx
-python-dotenv
-guessit
+fastapi==0.141.1
+starlette==1.6.0
+uvicorn==0.52.4
+asyncpg==0.31.0
+pydantic==2.13.5
+httpx==0.28.1
+python-dotenv==1.2.3
+guessit==4.4.0
+imageio-ffmpeg==0.6.0
